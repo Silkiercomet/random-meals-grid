@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Poppins:wght@400;500;700&display=swap");
+.App {
+  text-align: center;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5rem;
+  color: #231f20;
+  background: #f6f5f2;
+}
+.logo {
+  display: flex;
+  width: 100%;
+  font-family: "Corinthia", cursive;
+  font-size: 5vw;
+  background-color: rgb(68, 68, 68);
+  color: #ebebeb;
+  padding: 1.5rem;
+}
+.logo p {
+  margin: auto;
+}
+.container {
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 0 1.5rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  grid-gap: 8px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  max-height: 350px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+  margin: 0.5rem 0;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.btn {
+  background-color: none;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: #121212;
+  padding: 0.7rem 0.3rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.showImage {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  max-height: 300px;
+}
